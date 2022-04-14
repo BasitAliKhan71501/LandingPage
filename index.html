@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>LandingPage</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- headerSection -->
+    <section class="header-sec" id="header">
+        <div class="container-fluid headerContainer px-0 mx-0">
+            <nav class="navbar navbar-dark bg-transparent mx-xl-3 mx-lg-3 mx-md-3 mx-sm-3 mx-2">
+                <div class="container-fluid px-0 mx-0">
+                    <a class="navbar-brand fs-4">Code<span class="text-success">Arena</span></a>
+                    <a class="text-decoration-none">
+                        <!-- Offcanvas trigger -->
+                        <button id="offcanvasBtn" class="btn off-trigger d-flex justify-content-between align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                         <p class="trigger-txt px-0 my-0 me-2 fs-5">Menu</p>
+                            <i class="fa fa-bars text-white p-0 mt-1" style="font-size: 18px;"></i>
+                        </button>
+                        <!-- Offcanvas -->
+                        <div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header d-flex justify-content-between align-items-center">
+                                <p id="offcanvasRightLabel" class="text-success m-0 px-0">NAVIGATION</p>
+                                <button type="button" class="btn text-reset p-0 m-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="fa fa-times text-white m-0"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="links">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white">Works</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white">Clients</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white">Contact</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <p class="mt-4 text-sm">
+                                    Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.
+                                </p>
+                                <div class="socialMedia py-5 d-flex justify-content-start align-items-center">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter ms-xl-4 ms-lg-4 ms-md-3 ms-3 ms-sm-3"></i>
+                                    <i class="fa fa-instagram ms-xl-4 ms-lg-4 ms-md-3 ms-3 ms-sm-3"></i>
+                                    <i class="fa fa-dribbble ms-xl-4 ms-lg-4 ms-md-3 ms-3 ms-sm-3"></i>
+                                    <i class="fa fa-google ms-xl-4 ms-lg-4 ms-md-3 ms-3 ms-sm-3"></i>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div class="row mx-0 headerRow pt-5 justify-content-between">
+                <div class="col-11 col-xl-9 col-lg-9 col-sm-10 mx-auto mt-5">
+                    <h5 class="topmost-txt">WELCOME TO CODE ARENA</h5>
+                </div>
+                <div class="col-11 col-xl-8 col-lg-8 col-md-9 col-sm-10 d-flex mx-auto mb-5 pb-lg-5 pb-2">
+                    <h1 class="header-txt">We are a creative group of people who design influential brands and digital experiences.</h1>
+                </div>
+
+                <div class="col-1 socialMediaCol py-3 d-flex justify-content-start">
+                    <div class="socialMedia">
+                        <i class="header-icon facebook fa fa-facebook text-white my-3"></i>
+                        <i class="header-icon twitter fa fa-twitter text-white my-3"></i>
+                        <i class="header-icon instagram fa fa-instagram text-white my-3"></i>
+                        <i class="header-icon dribbble fa fa-dribbble text-white my-3"></i>
+                        <i class="header-icon google-plus fa fa-google-plus text-white my-3"></i>
+                    </div>
+                </div>
+                <div class="col-11 col-xl-9 col-lg-9 col-sm-10 mx-auto buttonsCol py-5">
+                    <a href="" class="btn border text-white my-2 mx-2 firstBtnText px-5 py-2">START A PROJECT</a>
+                    <a href="" class="btn border text-white my-2 mx-2 firstBtnText px-5 py-2">MORE ABOUT US</a>
+                </div>
+                <div class="col-11 mt-5 d-flex justify-content-end align-items-top">
+                    <a href="" class="d-flex text-decoration-none justify-content-center">
+                        <i class="fa fa-caret-down me-2 text-success"></i>
+                        <a href="#Hello" class="text-decoration-none">
+                            <p class="text-sm p-0 m-0 text-white scrollText fs-6">SCROLL DOWN</p>
+                        </a>
+                        <div class="greenLine d-flex justify-content-end align-items-baseline ms-2"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- body-part -->
+    <!-- client-section -->
+    <div class="container-fluid clientContainer">
+        <div class="row clientRow">
+            <div class="col-11 d-flex justify-content-end align-items-center">
+                <a href="" class="d-flex text-decoration-none justify-content-center">
+                    <div class="greenLine bg-white d-flex justify-content-end align-items-baseline ms-2"></div>
+                </a>
+            </div>
+            <div class="col-12 pt-4 text-center pt-5" id="Hello">
+                <h5 class="pb-0 mb-0 clientP">Hello There</h5>
+            </div>
+            <div class="col-12 text-center clientTitle pb-4 pb-4">
+                <h1 class="pt-0 mt-0 text-white">We Are Code Arena</h1>
+            </div>
+            <div class="col-12">
+                <hr class="mx-auto hr1 mb-4">
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-12 px-4 text-center mx-auto">
+                <p class="clientP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                </p>
+            </div>
+        </div>
+        <div class="row py-5 justify-content-center py-5 align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 py-3 col-8 my-3  numberTitle text-center">
+                <h1 class="text-white">127</h1>
+                <h6>Awards Recevied</h6>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 py-3 col-8 borderNone borderTop my-3 borderLeft  numberTitle text-center border border-top-0 border-bottom-0">
+                <h1 class="text-white">1505</h1>
+                <h6>Cups of Coffee</h6>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 py-3 col-8 my-3 borderNone borderTop borderNoneAll  numberTitle text-center  border border-left-0 border-top-0 border-bottom-0">
+                <h1 class="text-white">109</h1>
+                <h6>Projects Completed</h6>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 py-3 col-8 my-3 borderLeft borderTop  text-center numberTitle">
+                <h1 class="text-white">102</h1>
+                <h6>Happy Clients</h6>
+            </div>
+        </div>
+    </div>
+    <!-- Service Section -->
+    <section class="serv-sec py-5">
+        <div class="container-fluid bg-bright py-5">
+            <div class="row mx-0 pt-4">
+                <div class="col-12 text-center">
+                    <p class="text-success p-0 m-0 serviceP">WHAT WE DO</p>
+                </div>
+                <div class="col-12 col-xl-8 col-lg-8 col-md-10 col-sm-12 text-center mx-auto">
+                    <h1 class="serviceTitle">We’ve got everything you need to launch and grow your business</h1>
+                </div>
+                <hr class="mx-auto hr2 my-5">
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-paint-brush"></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Brand Identity</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-object-group "></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Illustration</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-bullhorn"></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Marketing</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-globe"></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Web Design</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-cube"></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Packaging Design</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-8 d-flex justify-content-start mx-xl-5 mx-lg-5 mx-md-4 my-2">
+                    <div class="part1">
+                        <i class="fa faGreen pe-2 fa-calendar"></i>
+                    </div>
+                    <div class="part2 ms-3">
+                        <h5 class="cardsH">Web Development</h5>
+                        <p class="cardsP">Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta
+                            sint.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our Work Section -->
+    <div class="container-fluid workContainer py-5 bg-dark">
+        <div class="row pt-5">
+            <div class="col-12 text-center pt-3">
+                <p class="text-success pb-0 mb-0 pictureP">RECENT WORKS</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 col-10 text-center mx-auto">
+                <h1 class="pt-0 mt-0 text-white pictureHeader">We love what we do,check out some of our latest work</h1>
+            </div>
+        </div>
+        <hr class="mx-auto hr3 mb-5">
+    </div>
+    <!-- photos -->
+    <div class="container-fluid photoContainer pb-4">
+        <div class="row justify-content-center">
+            <div class=" col-10 col-xl-4 col-lg-4 col-md-4 col-sm-8 p-0 ">
+                <a href="" class="bg-dark img1 text-decoration-none position-relative">
+                    <img src="./assests/1st.webp " width="100%" alt=" ">
+                    <div class="overlay1 bg-dark ps-3 pt-3">
+                        <div class="i1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic text-white">
+                            <h5 class="pb-0 mb-0 pt-0">SHUTTERBUG</h5>
+                            <p class="overlayP pt-0 mt-0">Branding</p>
+                        </div>
+
+
+                    </div>
+                </a>
+                <a href="" class="bg-dark img2 text-decoration-none position-relative">
+                    <img src="./assests/2nd.jpg " width="100%" alt=" ">
+                    <div class="overlay2 bg-dark ps-3 pt-3">
+                        <div class="i1 secondImgIcon1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 secondImgIcon2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic bettleText text-white">
+                            <h5 class="pb-0 mb-0 pt-0">THE BETTLE</h5>
+                            <p class="overlayP text-sm pt-0 mt-0">Web Development</p>
+                        </div>
+
+
+                    </div>
+                </a>
+                <a href="" class="bg-dark img3 text-decoration-none position-relative">
+                    <img src="./assests/3rd.webp" width="100%" alt=" ">
+                    <div class="overlay3 bg-dark ps-3 pt-3">
+                        <div class="i1 thirdImgIcon1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 thirdImgIcon2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic guitaristText text-white">
+                            <h5 class="pb-0 mb-0 pt-0">GUITARIST</h5>
+                            <p class="overlayP pt-0 mt-0">Web Development</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-10 col-xl-4 col-lg-4 col-md-4 col-sm-8 p-0 ">
+                <a href="" class="bg-dark img4 text-decoration-none position-relative">
+                    <img src="./assests/4th.webp" width="100%" alt=" ">
+                    <div class="overlay4 bg-dark ps-3 pt-3">
+                        <div class="i1 thirdImgIcon1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 thirdImgIcon2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic guitaristText text-white">
+                            <h6 class="pb-0 mb-0 pt-0">WOODCRAFT</h6>
+                            <p class="overlayP pt-0 mt-0 text-sm">Web Design</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bg-dark img5 text-decoration-none position-relative">
+                    <img src="./assests/5th.jpg" width="100%" alt=" ">
+                    <div class="overlay5 bg-dark ps-3 pt-3">
+                        <div class="i1 fifthImgIcon1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 fifthImgIcon2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic growText text-white">
+                            <h5 class="pb-0 mb-0 pt-0">GROW GREEN</h5>
+                            <p class="overlayP pt-0 mt-0">Branding</p>
+                        </div>
+
+
+                    </div>
+                </a>
+                <a href="" class="bg-dark img6 text-decoration-none position-relative">
+                    <img src="./assests/6th.webp" width="100%" alt=" ">
+                    <div class="overlay6 bg-dark ps-3 pt-3">
+                        <div class="i1 sixthImgIcon1">
+                            <i class="fa fa-link text-white"></i>
+                        </div>
+                        <div class="i2 sixthImgIcon2 d-flex justify-content-center align-items-center">
+                            <i class="fa fa-plus text-white"></i>
+                        </div>
+                        <div class="textPartPic palmeiraText text-white">
+                            <h5 class="pb-0 mb-0 pt-0">PALMEIRA</h5>
+                            <p class="overlayP pt-0 mt-0">Web Design</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- carousels sections -->
+    <div class="clients-sec py-5 pb-0 mt-5">
+        <!-- swiperSection -->
+        <div class="container-fluid mt-5 py-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h6 class="text-success h6 pb-0 mt-0 swiperH6">OUR CLIENTS</h6>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10 col-10 p-0 mb-5 mx-auto">
+                    <h1 class="pt-0 mt-0 swiper-header">Code Arena has been honored to partner up with these clients</h1>
+                </div>
+            </div>
+
+            <!-- Swiper JS -->
+            <div class="container brands">
+                <div class="swiper mySwiper my-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex justify-content-between">
+                            <img src="./assests/3rdLogo.jpg" alt="" width="45%" height="55%">
+                            <img src="./assests/fourthLogo.jpg" alt="" width="45%" height="55%">
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-between">
+                            <img src="./assests/5thLogo.jpg" alt="" width="45%" height="55%">
+                            <img src="./assests/6th.jpg" alt="" width="45%" height="55%">
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-between">
+                            <img src="./assests/7thLogo.webp" alt="" width="45%" height="55%">
+                            <img src="./assests/8thlogo.webp" alt="" width="45%" height="55%">
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-between">
+                            <img src="./assests/apple.jpg" alt="" width="39%" height="55%">
+                            <img src="./assests/react.jpg" alt="" width="39%" height="55%">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" width="40%">
+        <!-- 2nd Swiper -->
+        <div class="container text-center pt-5">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide px-xl-5 px-lg-5 px-md-4 px-sm-2 px-0">
+                        <p class="swiperText">"Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori. Excepturi nam cupiditate
+                            culpa doloremque deleniti repellat."</p>
+                        <img src="./assests/timCook.jpg" class="rounded-pill mb-2 secondSwipperImg" width="10%" alt="">
+                        <h5 class="swiperH5 brandCEO">Tim Cook</h5>
+                        <p class="swiperP brandP">CEO, Apple</p>
+                    </div>
+                    <div class="swiper-slide px-xl-5 px-lg-5 px-md-4 px-sm-2 px-0">
+                        <p class="swiperText">"Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel."</p>
+                        <img src="./assests/ceo-apple.webp" class="pill mb-2 secondSwipperImg" width="10%" alt="">
+                        <h5 class="pb-0 mb-0 brandCEO">Satya Nadella</h5>
+                        <p class="pt-0 mt-0 brandP">CEO, Microsoft</p>
+                    </div>
+                    <div class="swiper-slide px-5">
+                        <p class="swiperText">"Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel."</p>
+                        <img src="./assests/ceo.webp" class="pill mb-2 secondSwipperImg" width="10%" alt="">
+                        <h5 class="pb-0 mb-0 brandCEO">Sundar Pichai</h5>
+                        <p class="pt-0 mt-0 brandP">CEO, Google</p>
+                    </div>
+                </div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-prev text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg>
+                </div>
+                <div class="swiper-button-next text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12 d-flex justify-content-center align-items-baseline">
+                    <div class="greenLine"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- formSection -->
+    <div class="container-fluid formContainer px-0 mx-0">
+        <div class="row mx-0">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="greenLine"></div>
+            </div>
+        </div>
+        <div class="row py-5 mx-0">
+            <div class="col-12 text-center">
+                <p class="pb-0 mb-0 formP" style="color: #41cc52;">CONTACT US</p>
+            </div>
+            <div class="col-12 col-xl-7 col-lg-7 col-md-9 col-sm-10 text-center mx-auto">
+                <h1 class="pt-0 mt-0 text-white formHeading">Reach out for a new project or just say hello</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center py-5 mx-0">
+            <div class="col-10 col-xl-6 my-4 col-lg-6 col-md-6 col-sm-8 formCol pt-5 mb-lg-5 mb-md-5 mb-xl-5 mb-0 px-lg-4 px-md-4 px-xl-4 px-3">
+                <h6 class="text-white py-4">SEND US A MESSAGE</h6>
+                <form class="pt-1 pb-5">
+                    <div class="mb-3">
+                        <input type="name" class="form-control bg-transparent text-white" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control bg-transparent text-white" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control bg-transparent text-white" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control bg-transparent text-white" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="button d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-success" style="width: 70%;">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="col-10 col-xl-3 my-4 col-lg-3 col-md-4 col-sm-8 py-5 contactCol px-lg-5 px-md-5 px-xl-5 px-3 mb-5">
+                <h6 class="py-4 text-white">CONTACT INFO</h6>
+                <div class="contactPart1 my-4">
+                    <p class="text-success contactHeading">Where to Find Us</p>
+                    <p class="contactP py-2">1600 Armphitheatre Parkway Mountains View, CA <br> 94043 US</p>
+                </div>
+                <div class="contactPart2 my-4">
+                    <p class="text-success contactHeading">Email Us At</p>
+                    <p class="p-0 contactP m-0 py-1">info@codearena.com</p>
+                    <p class="p-0 contactP m-0 py-1">contact@codearena.com</p>
+                </div>
+                <div class="contactPart3 my-4">
+                    <p class="text-success contactHeading">Call Us At</p>
+                    <p class="p-0 contactP m-0 py-1">Phone(+92)3445590540</p>
+                    <p class="p-0 contactP m-0 py-1">Mobile(+92)3345090540</p>
+                    <p class="p-0 contactP m-0 py-1">Fax(+92)344553054</p>
+                </div>
+                <div class="contactSocialIcons pt-4 d-flex justify-content-start align-items-center">
+                    <i class="fa fa-facebook text-white"></i>
+                    <i class="fa fa-twitter ms-4 text-white"></i>
+                    <i class="fa fa-instagram ms-4 text-white"></i>
+                    <i class="fa fa-dribbble ms-4 text-white"></i>
+                    <i class="fa fa-google ms-4 text-white"></i>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footerSection -->
+    <footer>
+        <div class="container-fluid pt-5 pb-2 footer">
+            <div class="row justify-content-center mx-0 py-5">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12 mx-xl-3 mx-lg-3 mx-md-3 mx-sm-0 mx-0">
+                    <a class="text-decoration-none fs-4 fw-bold" style="color: #39b54a;">Code Arena</a>
+                    <p class="py-2 text-white opacity-25 lh-lg footerP">Lorem ipsum dolor adipisicing elit. Velit eveniet, dolorum autem hic cum rerum saepe quas aperiam incidunt? Temporibus quae dolorem at porro laboriosam quas similique fugit suscipit omnis?Lorem ipsum dolor sit amet.consectetur adipisicing
+                        elit. Impedit, dignissimos. Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-12 mx-xl-3 mx-lg-3 mx-md-3 mx-sm-0 mx-0">
+                    <h6 class="text-white pt-2">Get Notified</h6>
+                    <p class="text-white py-2 opacity-25 lh-lg footerP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aperiam doloremque cum explicabo libero nesciunt laudantium rerum itaque odit est?</p>
+                    <div class="searchBar d-flex justify-content-start align-items-center">
+                        <i class="fa fa-envelope-o text-white"></i>
+                        <input type="email" class="form-control bg-none searchBarInput ps-5 text-white" style="width: 80%;" placeholder="Email Address">
+                        <button type="submit" class="btn btn-success submitBtn">Subscribe</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center ">
+                    <p class="text-white opacity-75">©Copyright <span class="fw-bold">Code Arena</span> 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scrollspy" id="scrollspy">
+        <a href="#header" class="text-decoration-none"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+
+    <script src="./js/scrpt.js "></script>
+
+</body>
+
+</html>

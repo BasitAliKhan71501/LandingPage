@@ -1,0 +1,871 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.text-success {
+    color: #39b54a !important;
+}
+
+.btn-success {
+    background-color: #39b54a !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.btn-success:hover {
+    background-color: #30a43f !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+
+/* Header Sec */
+
+.headerContainer {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assests/hero-bg.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-sec .navbar .off-trigger .trigger-txt {
+    color: #39b54a;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.header-sec .navbar .off-trigger .trigger-txt:hover {
+    color: #ffffff !important;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+}
+
+.header-sec .navbar .offcanvas-end {
+    width: 30% !important;
+    z-index: 99999999 !important;
+    background-color: #0c0c0c !important;
+}
+
+.header-sec .navbar .offcanvas .fa.fa-times {
+    font-size: 14px !important;
+    font-weight: lighter !important;
+}
+
+.header-sec .navbar .offcanvas .text-sm {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.35;
+}
+
+.header-sec .navbar .offcanvas .socialMedia .fa {
+    color: #ffffff;
+    opacity: 0.35;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+    cursor: pointer;
+}
+
+.header-sec .navbar .offcanvas .socialMedia .fa:hover {
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+}
+
+.headerRow {
+    padding: 5rem 0 0rem 0 !important;
+}
+
+.header-sec .headerRow .topmost-txt {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.3rem;
+}
+
+.firstBtnText {
+    transition: all ease-in-out 0.7s;
+}
+
+.firstBtnText:hover {
+    transition: all ease-in-out 0.7s;
+    background-color: #ffffff !important;
+    color: #0c0c0c !important;
+}
+
+.header-sec .headerRow .header-txt {
+    font-size: 60px;
+    line-height: 1.33;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.header-icon-text {
+    display: none;
+}
+
+.header-sec .headerRow .header-icon {
+    font-size: 14px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+}
+
+.iconsDiv p {
+    font-size: 14px;
+    color: #3ac84d !important;
+}
+
+.clientContainer {
+    background-color: #39b54a;
+}
+
+.clientP {
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.765;
+    color: #010507;
+}
+
+.clientTitle h1 {
+    font-family: "montserrat-medium", sans-serif !important;
+    font-size: 72px !important;
+}
+
+.numberTitle h1 {
+    font-size: 50px;
+}
+
+.hr1 {
+    width: 35%;
+    opacity: 0.7;
+    background-color: rgb(237, 233, 233);
+}
+
+.hr2 {
+    width: 42%;
+    opacity: 1;
+    background-color: rgb(164, 159, 159);
+}
+
+.hr3 {
+    width: 30%;
+    opacity: 0.7;
+    background-color: rgb(185, 179, 179);
+}
+
+.facebook,
+.twitter,
+.instagram,
+.dribbble,
+.google-plus {
+    transition: all ease-in-out 0.3s;
+}
+
+.facebook:hover {
+    background-color: #4867aa !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.twitter:hover {
+    background-color: #49a0ed !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.instagram:hover {
+    background-color: #d7467d !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.dribbble:hover {
+    background-color: #ea4c89 !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.google-plus:hover {
+    background-color: #e94235 !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+.scrollText {
+    font-size: 13px !important;
+}
+
+.greenLine {
+    width: 2px;
+    height: 4rem !important;
+    background-color: #39b548;
+}
+
+.formCol {
+    background-color: #101010af;
+}
+
+.formCol form input,
+textarea {
+    border: none !important;
+    box-shadow: none !important;
+    color: white;
+    outline: none !important;
+    border-bottom: 1px solid rgb(221, 218, 218) !important;
+    border-radius: 0 !important;
+    padding: 1rem 0 !important;
+    font-family: "montserrat-light", sans-serif !important;
+    font-size: 1rem !important;
+}
+
+.formCol form input:focus,
+textarea:focus {
+    transition: all ease-in-out 0.8s;
+    border-bottom: 1.5px solid #39b54a !important;
+}
+
+.contactCol {
+    background-color: #121212d5;
+}
+
+.contactSocialIcons i {
+    font-size: 20px !important;
+}
+
+.contactSocialIcons i:hover {
+    color: #39b548 !important;
+}
+
+.contactHeading {
+    margin-top: 0;
+    color: #39b54a !important;
+    font-size: 1.2rem;
+    line-height: 1.313;
+}
+
+.contactP {
+    font-size: 15px;
+    color: white;
+}
+
+.workContainer {
+    padding-bottom: 10rem !important;
+}
+
+.photoContainer {
+    margin-top: -10rem;
+}
+
+.faGreen {
+    color: #39b54a;
+    font-size: 2.5rem !important;
+}
+
+
+/* .img:hover img1 */
+
+.img1:hover .overlay1 {
+    opacity: 1 !important;
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.img2:hover .overlay2 {
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
+.img3:hover .overlay3 {
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
+.img4:hover .overlay4 {
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
+.img5:hover .overlay5 {
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
+.img6:hover .overlay6 {
+    transition: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 1;
+}
+
+.overlay1 {
+    opacity: 0;
+    position: absolute !important;
+    top: -13.35rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/1st.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 455px;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.overlay2 {
+    opacity: 0;
+    position: absolute !important;
+    top: -13.37rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/2nd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+}
+
+.overlay3 {
+    opacity: 0;
+    position: absolute !important;
+    top: -16.9rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/3rd.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 560px;
+}
+
+.overlay4 {
+    opacity: 0;
+    position: absolute !important;
+    top: -16.9rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/4th.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 560px;
+}
+
+.overlay5 {
+    opacity: 0;
+    position: absolute !important;
+    top: -13.35rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/5th.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 449px;
+    height: 450px;
+}
+
+.overlay6 {
+    opacity: 0;
+    position: absolute !important;
+    top: -13.35rem !important;
+    left: 0rem !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assests/6th.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 449px;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.sixthImgIcon2,
+.palmeiraText {
+    padding-top: 9.5rem !important;
+}
+
+.fa-plus {
+    color: rgb(205, 204, 204) !important;
+}
+
+.fifthImgIcon2,
+.growText {
+    padding-top: 9rem !important;
+}
+
+.i1 {
+    width: 3rem;
+    height: 3rem;
+    border: 1.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.i1:hover {
+    background-color: white;
+}
+
+.i1:hover .fa-link {
+    color: black !important;
+}
+
+.secondImgIcon2,
+.bettleText {
+    padding-top: 9rem !important;
+}
+
+.pill {
+    border-radius: 50% !important;
+}
+
+.overlayP {
+    font-size: 13px !important;
+}
+
+.thirdImgIcon2 {
+    padding-top: 13rem !important;
+}
+
+.guitaristText {
+    padding-top: 13rem !important;
+}
+
+.i1 .fa-link {
+    font-size: 1.3rem;
+}
+
+.i2 {
+    padding-top: 10rem;
+}
+
+.clients-sec {
+    padding-top: 16.2rem;
+    padding-bottom: 16.8rem;
+    background-color: #e6e6e6;
+    color: #757575;
+}
+
+.clients-sec .swiper-header {
+    font-size: 45px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 0;
+}
+
+.clients-sec .brands .swiper {
+    height: 40vh !important;
+    overflow: visible !important;
+    overflow-x: hidden !important;
+}
+
+.swiper .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px !important;
+}
+
+.swiper-3d .swiper-cube-shadow,
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-wrapper {
+    background: transparent !important;
+}
+
+.clients-sec .brands .swiper img {
+    opacity: .55;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.clients-sec .brands .swiper img:hover {
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.clients-sec .swiper .swiperText {
+    font-family: "lora-regular", serif;
+    font-size: 30px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 6rem;
+}
+
+.clients-sec .swiper-button-next:after,
+.clients-sec .swiper-button-prev:after {
+    display: none;
+}
+
+.formContainer {
+    background: linear-gradient( rgba(32, 31, 31, 0.8), rgba(32, 31, 31, 0.8), rgba(32, 31, 31, 0.8)), url(../assests/formbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textPartPic {
+    padding-top: 10rem;
+}
+
+.serviceTitle {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 3.8rem !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.255;
+    color: #000;
+}
+
+footer {
+    background-color: #111111;
+}
+
+footer .searchBar input {
+    background: #0f0f0f;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0 !important;
+    border: none;
+}
+
+footer .searchBar input:focus {
+    background: #0f0f0f;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+footer .searchBar button {
+    text-transform: uppercase;
+    border-radius: 0 !important;
+    padding-top: 1.1rem !important;
+    padding-bottom: 1.1rem !important;
+    margin-left: -2rem;
+    font-size: 14px;
+}
+
+footer .searchBar .fa-envelope-o {
+    z-index: 99999 !important;
+    margin-right: -2rem !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+}
+
+.scrollspy {
+    position: fixed;
+    right: 3rem;
+    bottom: 3.5rem;
+    width: 4rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 4rem;
+    background-color: #000000;
+}
+
+.scrollspy:hover i {
+    opacity: 1;
+}
+
+.scrollspy a {
+    color: white;
+}
+
+.scrollspy a i {
+    opacity: 0.7;
+    font-size: 25px;
+}
+
+@media (max-width: 3000px) {
+    .overlay1,
+    .overlay2,
+    .overlay3,
+    .overlay4,
+    .overlay5,
+    .overlay6 {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .overlay1,
+    .overlay2,
+    .overlay3,
+    .overlay4,
+    .overlay5,
+    .overlay6 {
+        display: block;
+    }
+}
+
+@media (max-width: 1330px) {
+    .overlay1,
+    .overlay2,
+    .overlay3,
+    .overlay4,
+    .overlay5,
+    .overlay6 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .borderLeft {
+        border-left: 1px solid white !important;
+    }
+    .borderNone {
+        border-right: 0 !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+    }
+    .borderNoneAll {
+        border-left: none !important;
+    }
+    .serviceTitle {
+        font-size: 44px !important;
+    }
+    .numberTitle {
+        margin: 0 2rem;
+        font-size: 42px !important;
+    }
+    .socialMediaCol {
+        display: none !important;
+    }
+    .clientTitle h1 {
+        font-size: 42px !important;
+    }
+    .header-txt {
+        font-size: 50px !important;
+    }
+    .secondSwipperImg {
+        width: 15% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .secondSwipperImg {
+        width: 18% !important;
+    }
+    .clients-sec .swiper .swiperText {
+        font-size: 25px;
+    }
+    .borderTop {
+        border-top: 1px solid white !important;
+        border-right: 0 !important;
+        border-bottom: 0 !important;
+        border-left: none !important;
+    }
+    .cardsH {
+        font-size: 19px !important;
+    }
+    .cardsP {
+        font-size: 14.5px !important;
+    }
+    .header-sec .navbar .offcanvas-end {
+        width: 38% !important;
+    }
+    .numberTitle h1 {
+        font-size: 35px !important;
+    }
+    .clientTitle h1 {
+        font-size: 35px !important;
+    }
+    .header-txt {
+        font-size: 40px !important;
+    }
+    .lastText {
+        text-align: center !important;
+        font-weight: 300 !important;
+        font-size: 14px !important;
+    }
+    .swiper-header {
+        font-size: 35px !important;
+    }
+    .serviceP {
+        font-size: 14.5px;
+    }
+    .pictureP {
+        font-size: 14.5px;
+    }
+    .pictureHeader {
+        font-size: 24px !important;
+    }
+    .dash {
+        display: none !important;
+    }
+    .clientP {
+        font-size: 15px !important;
+    }
+    .topmost-txt {
+        font-size: 14.5px !important;
+    }
+    .serviceTitle {
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width: 592px) {
+    .brandCEO {
+        font-size: 17px;
+    }
+    .brandP {
+        font-size: 14.5px;
+    }
+    .secondSwipperImg {
+        width: 20% !important;
+    }
+    .clients-sec .swiper .swiperText {
+        font-size: 20px;
+    }
+    .serviceTitle {
+        font-size: 33px !important;
+    }
+    .header-sec .navbar .offcanvas-end {
+        width: 50% !important;
+    }
+    .swiper-header {
+        font-size: 28px !important;
+    }
+    .footerP {
+        font-size: 14.5px;
+    }
+    .swiperH6 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:577px) {
+    .buttonsCol {
+        padding-top: 0 !important;
+    }
+}
+
+@media (max-width: 568px) {
+    .numberTitle h1 {
+        font-size: 30px !important;
+    }
+    .clientTitle h1 {
+        font-size: 30px !important;
+    }
+    .clientP {
+        font-size: 13.5px !important;
+    }
+    .topmost-txt {
+        font-size: 13.5px !important;
+    }
+    .header-txt {
+        font-size: 30px !important;
+    }
+    .cardsH {
+        font-size: 18px !important;
+    }
+    .cardsP {
+        font-size: 13.5px !important;
+    }
+}
+
+@media (max-width:460px) {
+    .secondSwipperImg {
+        width: 22% !important;
+    }
+    .brandCEO {
+        font-size: 15.5px;
+    }
+    .brandP {
+        font-size: 13px;
+    }
+    .header-sec .navbar .offcanvas-end {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .formP {
+        font-size: 13px;
+    }
+    .formHeading {
+        font-size: 22px;
+    }
+    .clients-sec .swiper .swiperText {
+        font-size: 14px;
+    }
+    .numberTitle h1 {
+        font-size: 24px !important;
+    }
+    .clientTitle h1 {
+        font-size: 24px !important;
+    }
+    .header-txt {
+        font-size: 22px !important;
+    }
+    .clientP {
+        font-size: 13px !important;
+    }
+    .topmost-txt {
+        font-size: 13px !important;
+    }
+    .firstBtnText {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-size: 14px !important;
+    }
+    .cardsH {
+        font-size: 17.5px !important;
+    }
+    .cardsP {
+        font-size: 12.5px !important;
+    }
+    .serviceTitle {
+        font-size: 22px !important;
+    }
+    .serviceP {
+        font-size: 13px;
+    }
+    .header-sec .navbar .offcanvas-end {
+        width: 75% !important;
+    }
+    .searchBarInput {
+        width: 100% !important;
+    }
+    .swiper-header {
+        font-size: 24px !important;
+    }
+    .swiperH6 {
+        font-size: 13px;
+    }
+    .submitBtn {
+        display: none;
+    }
+    .pictureP {
+        font-size: 13px;
+    }
+    .pictureHeader {
+        font-size: 22px !important;
+    }
+    .footerP {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:300px) {
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+    .header-sec .navbar .offcanvas-end {
+        width: 78% !important;
+    }
+}
